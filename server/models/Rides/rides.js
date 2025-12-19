@@ -31,6 +31,18 @@ const rideSchema = new mongoose.Schema({
       enum:["finished","ride-is-coming","cancel"],
       default:"ride-is-coming"
     },
+    vehicleType : {
+      type : String,
+      require : true
+    },
+    distance : {
+      type : Number,
+      require : true
+    },
+    fare : {
+      type : Number,
+      require : true
+    }
   },
 },{
     timestamps:true,
