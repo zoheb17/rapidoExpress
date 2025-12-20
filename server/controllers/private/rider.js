@@ -14,7 +14,7 @@ router.get("/rider-details", async (req, res) => {
       {  riderName: 1, age: 1, _id: 0 }
     );
 
-    res.status(200).json({ msg: details });
+    res.status(200).json({ msg: details }); 
   } catch (error) {
     console.log(error);
     res.status(500).json({ msg: error });
