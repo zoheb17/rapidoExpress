@@ -82,6 +82,7 @@ router.post("/book-ride",async(req,res)=>{
     console.log(error);
     res.status(500).json({msg:error})
     
+    
   }
 })
 
